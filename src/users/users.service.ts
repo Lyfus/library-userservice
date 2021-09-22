@@ -7,8 +7,7 @@ import { User } from '../database/Entities/user/user.entity';
 @Processor('user')
 export class UsersService {
   constructor(
-    @Inject('USERS_REPOSITORY') private usersRepository: typeof User,
-    @InjectQueue('user') private userQueue: Queue,
+    @Inject('USERS_REPOSITORY') private usersRepository: typeof User
   ) {}
 
   async findOne(id): Promise<any> {

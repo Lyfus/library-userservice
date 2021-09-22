@@ -6,7 +6,7 @@ import { UsersModule } from './users/users.module';
   imports: [
     BullModule.forRoot({
       redis: {
-        host: 'localhost',
+        host: 'redis-server',
         port: 6379
       }
     }),
